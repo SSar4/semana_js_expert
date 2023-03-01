@@ -38,7 +38,9 @@ export default class HandGestureContoller {
           if (!scrollShouldRun()) continue;
           this.#scrollPage(event);
         }
-        console.log(event, x, y, "---");
+
+        if (hands?.length === 2) console.log("🖐🖐");
+        if (hands?.length === 1) console.log("🖐", hands[0].handedness);
       }
     } catch (error) {
       console.error("error", error);
