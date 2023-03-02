@@ -1195,8 +1195,7 @@ a {
      position: fixed;
  
      /* fica à frente dos elementos */
-     z-index: 2;
-     right: -1000;
+     z-index: 9999;
  
 
   //  transform: scale(1);
